@@ -1,0 +1,2 @@
+# Dependências do programa (cada fase adiciona as que precisar)
+python-dotenv

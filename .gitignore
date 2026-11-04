@@ -1,0 +1,35 @@
+# ---------- Ambiente virtual (cada pessoa cria o seu) ----------
+.venv/
+venv/
+
+# ---------- Segredos e configurações locais ----------
+.env
+
+# ---------- Arquivos gerados pelo Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# ---------- Cache de ferramentas ----------
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ---------- Streamlit ----------
+.streamlit/secrets.toml
+
+# ---------- Editor e sistema operacional ----------
+.vscode/
+Thumbs.db
+Desktop.ini
+
+# ---------- Dados do usuário (arquivos pessoais não vão pro GitHub) ----------
+data/library/*
+data/uploads/*
+data/output/*
+# Exceção: mantém o .gitkeep para a pasta existir no repositório
+!.gitkeep

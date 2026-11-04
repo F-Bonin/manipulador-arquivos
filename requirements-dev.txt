@@ -1,0 +1,5 @@
+# Inclui tudo o que está no requirements.txt
+-r requirements.txt
+
+# Ferramentas usadas apenas durante o desenvolvimento
+pytest
