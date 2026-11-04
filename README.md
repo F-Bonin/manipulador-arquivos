@@ -38,7 +38,7 @@ As camadas internas nunca dependem das externas.
 ## Roadmap
 
 - [x] Fase 1: ambiente isolado
-- [ ] Fase 2: estrutura base e configuração
+- [x] Fase 2: estrutura base e configuração
 - [ ] Fase 3: separar PDF por páginas
 - [ ] Fase 4: converter arquivos para Markdown
 - [ ] Fase 5: mesclar arquivos em PDF

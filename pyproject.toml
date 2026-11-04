@@ -1,8 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "file-manager"
 version = "0.1.0"
 description = "Manipulador de arquivos: separar PDF, converter para Markdown e mesclar em PDF."
 requires-python = ">=3.12"
+
+[tool.setuptools.packages.find]
+# Diz ao setuptools que os pacotes do projeto estão dentro da pasta src
+where = ["src"]
 
 [tool.pytest.ini_options]
 # Diz ao pytest onde fica o código (pasta src) para os imports funcionarem

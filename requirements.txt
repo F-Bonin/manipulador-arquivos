@@ -1,2 +1,5 @@
 # Dependências do programa (cada fase adiciona as que precisar)
 python-dotenv
+
+# Fase 3: manipulação de PDF (separar páginas)
+pypdf
