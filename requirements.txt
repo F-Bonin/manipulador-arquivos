@@ -1,5 +1,18 @@
 # Dependências do programa (cada fase adiciona as que precisar)
 python-dotenv
 
-# Fase 3: manipulação de PDF (separar páginas)
-pypdf
+# Fase 3: separar PDF
+pypdf==6.21.4
+
+# Fase 4: conversão para Markdown
+# Versões fixadas: o Controle Inteligente de Aplicativos do Windows bloqueia
+# arquivos compilados de algumas versões. Estas versões foram testadas e funcionam.
+# PDF -> Markdown (instala o pymupdf e o pymupdf_layout na mesma versão)
+pymupdf4llm==2.1
+# DOCX
+python-docx==1.2.0
+# Planilhas (pandas e as bibliotecas que ele usa por baixo)
+pandas==2.2.3
+numpy==2.5.4
+openpyxl==3.1.5
+xlrd==2.0.2

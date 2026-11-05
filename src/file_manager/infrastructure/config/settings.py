@@ -41,6 +41,7 @@ class Settings:
     app_env: str          # Ambiente de execução: local, staging, production
     log_level: str        # Nível de detalhe dos logs
     max_upload_mb: int    # Tamanho máximo de upload, em megabytes
+    large_output_warning_chars: int  # Acima disso, a conversão mostra um aviso de tamanho
     library_dir: Path     # Pasta com os arquivos que já estão no programa
     uploads_dir: Path     # Pasta onde ficam os arquivos novos enviados
     output_dir: Path      # Pasta onde ficam os resultados gerados
@@ -84,6 +85,7 @@ def load_settings() -> Settings:
         log_level=os.getenv("LOG_LEVEL", "INFO").upper(),
         # As variáveis de ambiente sempre chegam como texto, por isso int().
         max_upload_mb=int(os.getenv("MAX_UPLOAD_MB", "200")),
+        large_output_warning_chars=int(os.getenv("LARGE_OUTPUT_WARNING_CHARS", "500000")),
         library_dir=_resolve_directory("LIBRARY_DIR", "data/library"),
         uploads_dir=_resolve_directory("UPLOADS_DIR", "data/uploads"),
         output_dir=_resolve_directory("OUTPUT_DIR", "data/output"),
